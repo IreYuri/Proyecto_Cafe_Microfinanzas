@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#f1dfd8","error-container":"#ffdad6","on-surface-variant":"#54433a","on-tertiary-container":"#c1d4c1","surface-tint":"#934b19","on-background":"#231916","tertiary-container":"#4b5c4e","inverse-primary":"#ffb68c","inverse-surface":"#392e2a","tertiary":"#344537","error":"#ba1a1a","tertiary-fixed":"#d5e7d5","surface-container":"#fdeae3","primary-fixed-dim":"#ffb68c","on-tertiary-fixed":"#101f13","primary-fixed":"#ffdbc9","tertiary-fixed-dim":"#b9cbb9","on-tertiary":"#ffffff","secondary-fixed-dim":"#a1d494","outline":"#877369","primary-container":"#8b4513","secondary-container":"#b9eeab","on-primary-fixed-variant":"#753401","surface-dim":"#e8d6d0","on-error":"#ffffff","surface-bright":"#fff8f6","on-secondary":"#ffffff","secondary":"#3b6934","on-secondary-container":"#3f6d38","surface-container-highest":"#f1dfd8","primary":"#6c2f00","outline-variant":"#dac2b6","on-secondary-fixed-variant":"#23501e","secondary-fixed":"#bcf0ae","on-primary-container":"#ffc29f","background":"#fff8f6","on-secondary-fixed":"#002201","surface-container-low":"#fff1ec","surface-container-high":"#f7e4de","on-primary":"#ffffff","on-surface":"#231916","inverse-on-surface":"#ffede7","on-tertiary-fixed-variant":"#3a4b3d","surface-container-lowest":"#ffffff","on-error-container":"#93000a","on-primary-fixed":"#321200","surface":"#fff8f6"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","gutter":"1.5rem","space-md":"1rem","margin-mobile":"1.25rem","space-lg":"1.5rem","margin":"3rem","gutter-mobile":"1rem","space-xl":"2.5rem"},"fontFamily":{"headline-lg":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Playfair Display"],"display-lg":["Playfair Display"],"label-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"headline-md":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"numeric-data":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"]},"fontSize":{"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"numeric-data":["24px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(44,34,30,0.06)]"><div class="w-full h-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Origen Noble Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UNWIHn9P5Xj9VZ8_idQE7axcfI3RySCBO2csZTRhYHgdtpIVOS7vWqGnd3OoEqba05LWjcVLpAss2FAL3-QnTa4YsJ-q7yKkSJAWfMyFzDNktQyBJcvKMzdKZqENYi0Xs3EyL0xsPa3WSFepujur-86mOuI16htbyQEqumcVuUzn9CKxxiC6kCb-qLqOVbeCJTKMORF0r2lncwqU0_Al9ZYla0t5-S8-C1DcIcdQ4rfRmAnPZB4jk2Xc6n"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-semibold leading-tight">Origen Noble</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Café &amp; Microfinanzas</span></div></div><nav class="hidden xl:flex items-center gap-space-md ml-space-lg" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard-central" href="#">Dashboard</a><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="marketplace-subastas" href="#">Marketplace &amp; Subastas</a><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="microprestamos" href="#">Micropréstamos</a><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="trazabilidad-lotes" href="#">Trazabilidad</a><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="reportes-financieros" href="#">Reportes</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container rounded-lg p-0.5"><button class="px-2 py-0.5 font-label-sm text-label-sm rounded bg-surface-container-lowest text-primary font-bold shadow-sm" type="button">ES</button><button class="px-2 py-0.5 font-label-sm text-label-sm rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">EN</button></div><button aria-label="Alertas de Subasta" class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4kAPF5cJRe6A9vjFEW1r89Af8hKGOzZm17tHWoNL8fTavssg2cZO7KlqArsrr-xr-WIKCUaAed9QwlYUHfsyKFrmOP_7RV36P6_A2qXJr6x2iDMJJFErfXsF405_W2Km5z7GDIRA59GtXGZBN13RtptOjIggzT-AgHjSi-cH61LLZR3p1hAapvpRW6q4ka6WjYLjWAnhKvjX09hpmoC1uDvqtHMiFUIWNu_WsfGbwZAk9bX1bkICB9Q"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Ing. María Rodríguez</span><span class="font-label-sm text-label-sm text-secondary font-medium">Q-Grader Certificada #8492</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 hidden lg:flex flex-col justify-between py-space-lg px-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-sm"><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Panel Operativo</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard-central" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Resumen Agrícola</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="marketplace-subastas" href="#"><span class="material-symbols-outlined text-[20px]">gavel</span><span>Mesa de Subastas</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="microprestamos" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span>Líneas de Crédito</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="trazabilidad-lotes" href="#"><span class="material-symbols-outlined text-[20px]">qr_code_scanner</span><span>Fincas y Catación</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reportes-financieros" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Libro Mayor &amp; Cosecha</span></a></nav></div><div class="p-space-sm rounded-xl bg-surface-container space-y-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span><span class="font-label-sm text-label-sm font-semibold text-secondary uppercase">Protocolo SCA</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Monitoreo de cosechas activas y garantías de café pergamino seco.</p></div></aside><div class="lg:pl-64"><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-24 -right-20 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-96 -left-32 w-[30rem] h-[30rem] rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<div class="px-space-md lg:px-space-xl py-space-lg space-y-space-xl max-w-[1600px] mx-auto w-full">
+<!-- SECTION 1: Live Auction Ticker & Context Overline -->
+<section class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+              Subelecta 2024 • Sesión Activa
+            </span>
+<span class="font-label-sm text-label-sm text-outline">Lotes Calificados SCA ≥ 85.0</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+            Mesa de Café Verde de Alta Especialidad
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Acceso institucional a micro-lotes de taza presidencial, reservas fiduciarias de caficultores certificados y subastas en tiempo real con liquidación multimodal FOB/CIF.
+          </p>
+</div>
+<!-- Quick Summary Bar -->
+<div class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface-container-low shadow-sm">
+<div class="px-space-sm py-1 border-r border-outline-variant/30 text-right">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Micro-lotes</div>
+<div class="font-numeric-data text-numeric-data text-primary font-bold">18 Activos</div>
+</div>
+<div class="px-space-sm py-1 border-r border-outline-variant/30 text-right">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Puntaje Máx</div>
+<div class="font-numeric-data text-numeric-data text-secondary font-bold">92.4 <span class="text-xs font-normal">SCA</span></div>
+</div>
+<div class="px-space-sm py-1 text-right">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Pujadores Activos</div>
+<div class="font-numeric-data text-numeric-data text-on-surface font-bold">42 Casas</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Advanced Interactive Filters Drawer -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm pb-space-sm border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Parámetros de Calibración Agronómica</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="font-label-md text-label-md text-outline hover:text-primary transition-colors flex items-center gap-1" id="resetFiltersBtn">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+              Restablecer
+            </button>
+<span class="text-outline-variant">•</span>
+<span class="font-label-md text-label-md text-secondary font-bold">6 Coincidencias Filtradas</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- 1. Cupping Score Slider -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Puntaje en Taza SCA</label>
+<span class="font-numeric-data text-primary text-base font-bold" id="scoreDisplay">88.0 – 94.5+</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary-container" id="scoreSlider" max="94" min="85" step="0.5" type="range" value="88"/>
+<div class="flex justify-between text-[11px] text-outline font-mono">
+<span>85.0 (Excelente)</span>
+<span>88.0 (Excepcional)</span>
+<span>94.0+ (Presidencial)</span>
+</div>
+</div>
+<!-- 2. Altitude Slider -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Altitud Geográfica</label>
+<span class="font-numeric-data text-secondary text-base font-bold" id="altDisplay">1,750 msnm</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-secondary" id="altSlider" max="2200" min="1400" step="50" type="range" value="1750"/>
+<div class="flex justify-between text-[11px] text-outline font-mono">
+<span>1,400 msnm</span>
+<span>1,800 msnm</span>
+<span>2,200 msnm</span>
+</div>
+</div>
+<!-- 3. Botanical Variety Filter -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Varietales Botánicos</label>
+<div class="flex flex-wrap gap-1.5">
+<button class="filter-chip px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold transition-all">Geisha</button>
+<button class="filter-chip px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all">Bourbon Rosado</button>
+<button class="filter-chip px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all">Pacamara</button>
+<button class="filter-chip px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all">Sidra</button>
+<button class="filter-chip px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all">Caturra Chiroso</button>
+<button class="filter-chip px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all">Wush Wush</button>
+</div>
+</div>
+<!-- 4. Processing Methods -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Beneficio &amp; Fermentación</label>
+<div class="flex flex-col gap-1.5">
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer hover:text-primary">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-0 accent-primary-container" type="checkbox"/>
+<span>Lavado Fermentación Extendida (72h)</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer hover:text-primary">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-0 accent-primary-container" type="checkbox"/>
+<span>Natural Anaeróbico (Tanque Sellado)</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer hover:text-primary">
+<input class="rounded border-outline-variant text-primary focus:ring-0 accent-primary-container" type="checkbox"/>
+<span>Honey Maceración Carbónica (CO₂)</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Sensory Profile Badges Strip -->
+<div class="pt-space-sm border-t border-outline-variant/15 flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Descriptores SCA:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">local_florist</span> Jazmín
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">nature</span> Bergamota
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">nutrition</span> Melocotón
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">cookie</span> Panela
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">sunny</span> Frutas Tropicales
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">cake</span> Chocolate Oscuro
+            </span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Main Dynamic Grid - Live Auction Terminal & Lot Showcase -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl items-start">
+<!-- Left 8-Cols: Premium Micro-lots Showcase -->
+<div class="xl:col-span-8 space-y-space-lg">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Catálogo de Micro-Lotes Disponibles
+            </h2>
+<div class="flex items-center bg-surface-container p-0.5 rounded-lg">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm font-bold text-primary shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">grid_view</span> Mosaico
+              </button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant font-label-sm text-label-sm font-medium hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">format_list_bulleted</span> Lista Analítica
+              </button>
+</div>
+</div>
+<!-- Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- LOT CARD 1: Geisha Monteverde (Hero Live Auction Linked) -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<!-- Image Header with badges -->
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High quality aerial close-up photograph of green coffee beans spread on drying raised african beds in Finca Monteverde Colombia, warm sunny afternoon light, terracotta tones, lush green Andes mountains in soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt6AgaJBlkj6zxWhPd6EhP27uzyITUWQ16ZtYzTWsNyEfLS9JPMsENxShy3g1wMe2VRq9MXTW-qNilhg6lpNfYhtkjd3nu9yNU9EE274xJP0jwb9XNuZslPftc-nXdMSiEqj9FpKP35gbbiJQyCR2ccgpFMkFdOl4dLWeouFCny6iCLjLAr5KkHcGK_k9NGhPMx5zyxTL2X9-W9STVVBXfNp6Y-ot2xkyITANpj7WlosJ9K03Os_fGZQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<!-- SCA Badge -->
+<div class="absolute top-3 right-3 flex items-center gap-1 px-3 py-1 rounded-full bg-secondary text-on-secondary font-numeric-data text-sm font-bold shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    91.2 SCA
+                  </div>
+<!-- Variety & Origin Ribbon -->
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-surface-bright">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-variant">Lote #ON-COL-2024-01</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-bright leading-tight">Geisha Anaeróbico 96h</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Finca Monteverde • Huila, Colombia</p>
+</div>
+</div>
+</div>
+<!-- Technical Agronomy Strip -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">landscape</span> 1,980 msnm
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">science</span> Natural Anaeróbico
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                    GrainPro 35kg • 14 Sacos
+                  </span>
+</div>
+<!-- Sensory Radar & Scores -->
+<div class="p-space-md space-y-space-sm">
+<div class="flex items-center justify-between text-xs text-outline font-semibold uppercase tracking-wider">
+<span>Atributos de Catación SCA</span>
+<span class="text-primary font-bold">Q-Grader: M. Rodríguez</span>
+</div>
+<!-- Mini Radar Chart (Inline SVG) -->
+<div class="flex items-center gap-space-md">
+<div class="w-28 h-28 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full text-primary" viewbox="0 0 100 100">
+<!-- Polygons background grids -->
+<polygon fill="none" points="50,15 85,38 72,80 28,80 15,38" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"></polygon>
+<polygon fill="none" points="50,27 74,42 65,70 35,70 26,42" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"></polygon>
+<!-- Radar Value Area -->
+<polygon fill="currentColor" fill-opacity="0.25" points="50,18 82,39 69,76 30,75 20,40" stroke="currentColor" stroke-width="2"></polygon>
+<!-- Axis lines -->
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="50" y1="50" y2="15"></line>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="85" y1="50" y2="38"></line>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="72" y1="50" y2="80"></line>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="28" y1="50" y2="80"></line>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="15" y1="50" y2="38"></line>
+</svg>
+</div>
+<!-- Attribute bars -->
+<div class="flex-1 space-y-1 text-xs">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Fragancia / Floral</span><span class="font-bold">9.50</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-primary h-1 rounded" style="width: 95%"></div></div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Acidez Málica Brillante</span><span class="font-bold">9.25</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-primary h-1 rounded" style="width: 92%"></div></div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Dulzura &amp; Frutos Rojos</span><span class="font-bold">9.00</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-primary h-1 rounded" style="width: 90%"></div></div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Balance y Retrogusto</span><span class="font-bold">9.25</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-primary h-1 rounded" style="width: 92%"></div></div>
+</div>
+</div>
+</div>
+<!-- Tasting tags -->
+<div class="flex flex-wrap gap-1 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Jazmín Silvestre</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Bergamota Fresca</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Miel de Azahar</span>
+</div>
+<!-- Farmer Bio snippet -->
+<div class="flex items-center gap-space-xs pt-space-xs border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-[18px] text-secondary">person_pin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Caficultor: <strong>Don Gilberto Rojas</strong> (3ª Generación)</span>
+</div>
+</div>
+</div>
+<!-- Action Card Footer -->
+<div class="p-space-md bg-surface-container-low border-t border-outline-variant/20 flex items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Modalidad de Venta</span>
+<span class="font-numeric-data text-numeric-data text-primary font-bold leading-none">$18.50 <span class="text-xs font-normal text-on-surface-variant">USD / lb</span></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" title="Ver ficha técnica completa">
+<span class="material-symbols-outlined text-[18px]">lab_profile</span> Ficha
+                  </button>
+<a class="px-4 py-2 rounded bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md font-bold transition-all shadow-sm flex items-center gap-1.5" href="#liveAuctionModule">
+<span class="material-symbols-outlined text-[18px]">gavel</span> Ir a Subasta
+                  </a>
+</div>
+</div>
+</div>
+<!-- LOT CARD 2: Bourbon Rosado La Esperanza -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<!-- Image Header with badges -->
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up photography of rare pink bourbon coffee cherries ripening on tree branch with morning dew, sunny mountain plantation, lush vegetation, rich warm earthy color grading" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSS2nwblG_wSvcTaywFwySJS59q1EqrjdUnf4Ac5LyggVJZK6dIIAkA05XOOiC-jOFgmolY7zHWWIhtGB4-z0DcseerWPiTDHNlhE7sZjHsvt9IgYN_KDJc3v5Yd3_HHHF016Nz61YI6T69rzeMRb_Q8301_dTyeGyOcTIy7xlGMm6KezWFC1BJVyeIwItF_7uSdqlEDFUj3w4v0-qdHrdonS-k9EqohYlfpH1pgb1QBtcEk9uDLL8eA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<!-- SCA Badge -->
+<div class="absolute top-3 right-3 flex items-center gap-1 px-3 py-1 rounded-full bg-secondary text-on-secondary font-numeric-data text-sm font-bold shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    89.5 SCA
+                  </div>
+<!-- Variety & Origin Ribbon -->
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-surface-bright">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-variant">Lote #ON-COL-2024-04</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-bright leading-tight">Bourbon Rosado Fermentación Fría</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Finca La Esperanza • Pitalito, Huila</p>
+</div>
+</div>
+</div>
+<!-- Technical Agronomy Strip -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">landscape</span> 1,840 msnm
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">water_drop</span> Lavado Extendido
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                    GrainPro 35kg • 18 Sacos
+                  </span>
+</div>
+<!-- Sensory Radar & Scores -->
+<div class="p-space-md space-y-space-sm">
+<div class="flex items-center justify-between text-xs text-outline font-semibold uppercase tracking-wider">
+<span>Atributos de Catación SCA</span>
+<span class="text-primary font-bold">Q-Grader: C. Valderrama</span>
+</div>
+<!-- Mini Radar Chart (Inline SVG) -->
+<div class="flex items-center gap-space-md">
+<div class="w-28 h-28 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full text-secondary" viewbox="0 0 100 100">
+<polygon fill="none" points="50,15 85,38 72,80 28,80 15,38" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"></polygon>
+<polygon fill="none" points="50,27 74,42 65,70 35,70 26,42" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"></polygon>
+<!-- Radar Area -->
+<polygon fill="currentColor" fill-opacity="0.25" points="50,22 80,42 70,72 32,74 24,44" stroke="currentColor" stroke-width="2"></polygon>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="50" y1="50" y2="15"></line>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="85" y1="50" y2="38"></line>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="72" y1="50" y2="80"></line>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="28" y1="50" y2="80"></line>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1" x1="50" x2="15" y1="50" y2="38"></line>
+</svg>
+</div>
+<!-- Attribute bars -->
+<div class="flex-1 space-y-1 text-xs">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Acidez Cítrica Limpia</span><span class="font-bold">9.00</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-secondary h-1 rounded" style="width: 90%"></div></div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Cuerpo Sedoso</span><span class="font-bold">8.75</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-secondary h-1 rounded" style="width: 87%"></div></div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Dulzura Frutos Amarillos</span><span class="font-bold">9.20</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-secondary h-1 rounded" style="width: 92%"></div></div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Claridad de Taza</span><span class="font-bold">9.00</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-secondary h-1 rounded" style="width: 90%"></div></div>
+</div>
+</div>
+</div>
+<!-- Tasting tags -->
+<div class="flex flex-wrap gap-1 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Melocotón Maduro</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Papaya Silvestre</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Caña de Azúcar</span>
+</div>
+<!-- Farmer Bio snippet -->
+<div class="flex items-center gap-space-xs pt-space-xs border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-[18px] text-secondary">person_pin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Caficultora: <strong>Doña Elena Trujillo</strong> (Finca Orgánica)</span>
+</div>
+</div>
+</div>
+<!-- Action Card Footer -->
+<div class="p-space-md bg-surface-container-low border-t border-outline-variant/20 flex items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Precio Compra Inmediata</span>
+<span class="font-numeric-data text-numeric-data text-primary font-bold leading-none">$12.40 <span class="text-xs font-normal text-on-surface-variant">USD / lb</span></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" title="Ver ficha técnica completa">
+<span class="material-symbols-outlined text-[18px]">lab_profile</span> Ficha
+                  </button>
+<button class="px-4 py-2 rounded bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-all shadow-sm flex items-center gap-1.5" onclick="prefillQuote('Bourbon Rosado Fermentación Fría', 18, 12.40)">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Comprar Lote
+                  </button>
+</div>
+</div>
+</div>
+<!-- LOT CARD 3: Pacamara Natural Anaeróbico -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<!-- Image Header with badges -->
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Burlap sacks filled with high altitude green coffee beans stacked inside an artisan rustic Colombian dry mill warehouse with warm dust motes in sunbeams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0NvbTAgGFDaohsU-iub2o8QQs5qD3YXt1iVHiJhPwJJeXv25ykCppaKhSsTqCif4ur7wiL0OVAJTlSUJ5DdSkzafOV56WWpIOktsPCKcYxVVu8FOHPHGLV2pads4GZXe7VtPFiMFcJjj9SM3eNraKPG-VfXGc6QvJXVOdPKFaJzWMYVgTlkYGCaNjfOMXjGqKlszuZzntHu3yEOT4hCaX3O7qtaO9GJHyVAH1egWSzhcjBNDhU4sURw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-3 py-1 rounded-full bg-secondary text-on-secondary font-numeric-data text-sm font-bold shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    88.75 SCA
+                  </div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-surface-bright">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-variant">Lote #ON-NAR-2024-09</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-bright leading-tight">Pacamara Miel Anaeróbica</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Finca El Mirador • Buesaco, Nariño</p>
+</div>
+</div>
+</div>
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">landscape</span> 2,120 msnm
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">science</span> Honey Carbónico
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                    GrainPro 35kg • 10 Sacos
+                  </span>
+</div>
+<div class="p-space-md space-y-space-sm">
+<div class="flex items-center justify-between text-xs text-outline font-semibold uppercase tracking-wider">
+<span>Atributos de Catación SCA</span>
+<span class="text-primary font-bold">Q-Grader: M. Rodríguez</span>
+</div>
+<div class="space-y-1 text-xs">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Cuerpo &amp; Textura</span><span class="font-bold">9.20</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-primary h-1 rounded" style="width: 92%"></div></div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Dulzura Chocolate &amp; Higo</span><span class="font-bold">8.90</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-primary h-1 rounded" style="width: 89%"></div></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Higos Secos</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Cacao 80%</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Mandarina</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-[18px] text-secondary">person_pin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Caficultor: <strong>Jaime Lasso</strong></span>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low border-t border-outline-variant/20 flex items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Precio Compra Inmediata</span>
+<span class="font-numeric-data text-numeric-data text-primary font-bold leading-none">$11.80 <span class="text-xs font-normal text-on-surface-variant">USD / lb</span></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">lab_profile</span> Ficha
+                  </button>
+<button class="px-4 py-2 rounded bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-all shadow-sm flex items-center gap-1.5" onclick="prefillQuote('Pacamara Miel Anaeróbica', 10, 11.80)">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Comprar Lote
+                  </button>
+</div>
+</div>
+</div>
+<!-- LOT CARD 4: Caturra Chiroso -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Hands of cupper holding cupping spoons over porcelain cupping bowls in an evaluation laboratory, with parchment coffee and score sheets on table, natural window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Gzc09rk-fy0ZqZFp3nKLh5W5XQWlIqMhTtpVKOGAh0U8bBL66WAgKxbYM18Qvvd4iETu2blw2-ulXPaM3J8e-LzKvNdDxlT0M1WAJMTyPgTQ8yuFF-BmhDKaMlJ6PYIdDUiCPTATO69OQLFJ3O727rpOGWgXpcI1YTaS58Rkc1XPPdVK9oIRyR5ucNCTorlW_nRoC_MHXs2ioyZiq95pToy-Qwe8DtWTnvaOZLDL1Yi3namd_5dhbQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-3 py-1 rounded-full bg-secondary text-on-secondary font-numeric-data text-sm font-bold shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    88.5 SCA
+                  </div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-surface-bright">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-variant">Lote #ON-ANT-2024-12</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-bright leading-tight">Caturra Chiroso Lavado</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Finca La Suiza • Urrao, Antioquia</p>
+</div>
+</div>
+</div>
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">landscape</span> 2,050 msnm
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">water_drop</span> Lavado Tradicional
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                    GrainPro 35kg • 22 Sacos
+                  </span>
+</div>
+<div class="p-space-md space-y-space-sm">
+<div class="flex items-center justify-between text-xs text-outline font-semibold uppercase tracking-wider">
+<span>Atributos de Catación SCA</span>
+<span class="text-primary font-bold">Q-Grader: C. Valderrama</span>
+</div>
+<div class="space-y-1 text-xs">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Limpieza de Taza</span><span class="font-bold">9.15</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-secondary h-1 rounded" style="width: 91%"></div></div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface"><span>Dulzura de Panela</span><span class="font-bold">9.00</span></div>
+<div class="w-full bg-surface-container-high h-1 rounded"><div class="bg-secondary h-1 rounded" style="width: 90%"></div></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Manzana Verde</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Panela Melosa</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-[11px] font-medium text-on-surface">Té Negro</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-[18px] text-secondary">person_pin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Caficultor: <strong>Hernando Marín</strong></span>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low border-t border-outline-variant/20 flex items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Precio Compra Inmediata</span>
+<span class="font-numeric-data text-numeric-data text-primary font-bold leading-none">$9.90 <span class="text-xs font-normal text-on-surface-variant">USD / lb</span></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">lab_profile</span> Ficha
+                  </button>
+<button class="px-4 py-2 rounded bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-all shadow-sm flex items-center gap-1.5" onclick="prefillQuote('Caturra Chiroso Lavado', 22, 9.90)">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Comprar Lote
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 4-Cols: Sticky Live Bidding Room (Auction Terminal) -->
+<div class="xl:col-span-4 sticky top-20 space-y-space-md" id="liveAuctionModule">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-xl p-space-md shadow-xl border border-inverse-primary/20 space-y-space-md">
+<!-- Terminal Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-highest/20">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary-fixed"></span>
+</span>
+<span class="font-label-md text-label-md text-inverse-primary tracking-wider uppercase font-bold">Terminal en Vivo</span>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-highest/10 text-xs font-mono text-inverse-on-surface">
+<span class="material-symbols-outlined text-[14px]">security</span>
+                Contrato Escrow #882
+              </div>
+</div>
+<!-- Auction Target Lot -->
+<div class="space-y-1">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider font-semibold">Lote #ON-COL-2024-01 • 91.2 SCA</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/70">14 Sacos (1,078 lbs)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold leading-snug">
+                Geisha Anaeróbico 96h • Finca Monteverde
+              </h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/70">
+                Pujador Líder Actual: <span class="text-inverse-primary font-semibold">Fuglen Coffee Bar (Oslo, NO)</span>
+</p>
+</div>
+<!-- Countdown and Current Price Box -->
+<div class="grid grid-cols-2 gap-space-sm bg-inverse-surface/60 p-space-sm rounded-lg border border-surface-container-highest/15">
+<div>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/60 block uppercase">Cierre de Ronda</span>
+<div class="font-numeric-data text-2xl font-bold text-secondary-fixed tracking-tight font-mono" id="countdownTimer">
+                  03:42:18
+                </div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-inverse-on-surface/60 block uppercase">Puja Actual / lb</span>
+<div class="font-numeric-data text-2xl font-bold text-inverse-primary tracking-tight" id="currentBidPrice">
+                  $18.50 <span class="text-xs font-normal text-inverse-on-surface/70">USD</span>
+</div>
+</div>
+</div>
+<!-- Live Bid Feed Stream -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-center text-xs font-label-sm text-inverse-on-surface/60 uppercase">
+<span>Historial de Pujas Internacional</span>
+<span class="flex items-center gap-1 text-secondary-fixed"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span> Sincronizado</span>
+</div>
+<div class="space-y-1.5 max-h-44 overflow-y-auto pr-1 text-xs font-mono" id="bidStream">
+<!-- Bid item -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-highest/10 border-l-2 border-secondary-fixed">
+<div class="flex items-center gap-2">
+<span class="text-base" title="Noruega">🇳🇴</span>
+<div>
+<span class="text-inverse-on-surface font-semibold block">Fuglen Roasters</span>
+<span class="text-[10px] text-inverse-on-surface/60">Oslo • Hace 12s</span>
+</div>
+</div>
+<span class="font-bold text-secondary-fixed">$18.50 / lb</span>
+</div>
+<!-- Bid item -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-highest/5">
+<div class="flex items-center gap-2">
+<span class="text-base" title="Japón">🇯🇵</span>
+<div>
+<span class="text-inverse-on-surface/90 block">Koffee Mameya</span>
+<span class="text-[10px] text-inverse-on-surface/50">Tokio • Hace 45s</span>
+</div>
+</div>
+<span class="text-inverse-on-surface/80">$18.25 / lb</span>
+</div>
+<!-- Bid item -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-highest/5">
+<div class="flex items-center gap-2">
+<span class="text-base" title="Estados Unidos">🇺🇸</span>
+<div>
+<span class="text-inverse-on-surface/90 block">Heart Roasters</span>
+<span class="text-[10px] text-inverse-on-surface/50">Portland • Hace 2m</span>
+</div>
+</div>
+<span class="text-inverse-on-surface/80">$18.00 / lb</span>
+</div>
+<!-- Bid item -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-highest/5">
+<div class="flex items-center gap-2">
+<span class="text-base" title="Corea del Sur">🇰🇷</span>
+<div>
+<span class="text-inverse-on-surface/90 block">Fritz Coffee Co.</span>
+<span class="text-[10px] text-inverse-on-surface/50">Seúl • Hace 5m</span>
+</div>
+</div>
+<span class="text-inverse-on-surface/80">$17.75 / lb</span>
+</div>
+</div>
+</div>
+<!-- Terminal Bidding Controls -->
+<div class="pt-space-sm border-t border-surface-container-highest/20 space-y-space-sm">
+<div class="flex items-center justify-between text-xs text-inverse-on-surface/70">
+<span>Incremento Mínimo: <strong>+$0.25 USD</strong></span>
+<span class="text-secondary-fixed" id="lotTotalPreview">Valor Total Lote: $20,212.50</span>
+</div>
+<!-- Quick Increment Row -->
+<div class="grid grid-cols-3 gap-2">
+<button class="py-1 px-2 rounded bg-surface-container-highest/15 hover:bg-surface-container-highest/30 text-xs font-mono font-bold text-inverse-on-surface transition-colors" onclick="setBidDelta(0.25)">+ $0.25</button>
+<button class="py-1 px-2 rounded bg-surface-container-highest/15 hover:bg-surface-container-highest/30 text-xs font-mono font-bold text-inverse-on-surface transition-colors" onclick="setBidDelta(0.50)">+ $0.50</button>
+<button class="py-1 px-2 rounded bg-surface-container-highest/15 hover:bg-surface-container-highest/30 text-xs font-mono font-bold text-inverse-on-surface transition-colors" onclick="setBidDelta(1.00)">+ $1.00</button>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative flex-1">
+<span class="absolute left-3 top-2.5 text-xs text-inverse-on-surface/60 font-mono">$</span>
+<input class="w-full pl-6 pr-3 py-2 bg-surface-container-highest/20 rounded font-mono text-sm font-bold text-inverse-on-surface border border-surface-container-highest/30 focus:outline-none focus:border-secondary-fixed" id="customBidInput" step="0.25" type="number" value="18.75"/>
+</div>
+<button class="flex-1 py-2 px-3 rounded bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-label-md text-label-md font-bold transition-all shadow-md flex items-center justify-center gap-1" id="submitBidBtn">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Pujar Ahora</span>
+</button>
+</div>
+<p class="text-[11px] text-inverse-on-surface/50 text-center">
+                Pujas vinculantes bajo código regulatorio SCA &amp; fideicomiso de Origen Noble.
+              </p>
+</div>
+</div>
+<!-- Micro-Trust Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">assured_workload</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Garantía Fiduciaria Directa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              El 82% del valor final de la subasta se liquida directamente al caficultor dentro de las 48h posteriores a la confirmación de embarque.
+            </p>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Institutional Quotation & Global Freight Dispatch Module (CIF / FOB) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md border-b border-outline-variant/20 pb-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">local_shipping</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Módulo de Despacho &amp; Cotización Formal Multimodal
+              </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Emisión de factura proforma internacional bajo Incoterms 2020 (FOB Puerto Buenaventura / Cartagena o CIF Puerto Destino).
+            </p>
+</div>
+<div class="flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-surface-container-high text-xs font-mono text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+            Certificados Fitosanitarios &amp; ICO Incluidos
+          </div>
+</div>
+<form class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg" id="quoteForm" onsubmit="event.preventDefault(); calculateQuote();">
+<!-- Column 1: Lot & Volume Selection (5 cols) -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Micro-Lote Seleccionado</label>
+<select class="w-full p-2.5 rounded bg-surface-container font-body-sm text-body-sm text-on-surface border-none focus:ring-1 focus:ring-primary" id="quoteLotSelect">
+<option data-price="18.50" data-sacks="14" value="geisha-monteverde">Geisha Anaeróbico 96h (Monteverde, 91.2 SCA) - $18.50/lb</option>
+<option data-price="12.40" data-sacks="18" value="bourbon-esperanza">Bourbon Rosado (La Esperanza, 89.5 SCA) - $12.40/lb</option>
+<option data-price="11.80" data-sacks="10" value="pacamara-mirador">Pacamara Miel (El Mirador, 88.75 SCA) - $11.80/lb</option>
+<option data-price="9.90" data-sacks="22" value="caturra-suiza">Caturra Chiroso Lavado (La Suiza, 88.5 SCA) - $9.90/lb</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Volumen de Sacos</label>
+<div class="relative">
+<input class="w-full p-2.5 rounded bg-surface-container font-numeric-data text-base text-on-surface border-none focus:ring-1 focus:ring-primary" id="quoteSacksInput" max="25" min="1" type="number" value="10"/>
+<span class="absolute right-3 top-3 text-xs text-outline">x 35kg</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Empaque Especializado</label>
+<select class="w-full p-2.5 rounded bg-surface-container font-body-sm text-body-sm text-on-surface border-none focus:ring-1 focus:ring-primary" id="quotePackaging">
+<option value="grainpro">GrainPro Ultra-Hermético</option>
+<option value="vacuum">Al Vacío (Caja 15kg x2)</option>
+<option value="ecotact">Ecotact Multi-capa</option>
+</select>
+</div>
+</div>
+<!-- IncoTerm & Mode Selection -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Término de Negociación (Incoterm)</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<label class="flex items-center gap-2 p-2.5 rounded bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="accent-primary-container" name="incoterm" type="radio" value="FOB"/>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">FOB Colombia</span>
+<span class="text-[11px] text-outline">Buenaventura / Cartagena</span>
+</div>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="accent-primary-container" name="incoterm" type="radio" value="CIF"/>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">CIF Destino</span>
+<span class="text-[11px] text-outline">Flete Marítimo + Seguro</span>
+</div>
+</label>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Puerto / Aeropuerto de Destino</label>
+<select class="w-full p-2.5 rounded bg-surface-container font-body-sm text-body-sm text-on-surface border-none focus:ring-1 focus:ring-primary" id="destinationPort">
+<option data-air="4.20" data-freight-cif="1.45" value="yokohama">Puerto de Yokohama / Tokio (Japón)</option>
+<option data-air="3.80" data-freight-cif="1.15" value="hamburg">Puerto de Hamburgo (Alemania)</option>
+<option data-air="2.90" data-freight-cif="0.85" value="oakland">Puerto de Oakland / Los Ángeles (USA)</option>
+<option data-air="4.35" data-freight-cif="1.50" value="busan">Puerto de Busan (Corea del Sur)</option>
+<option data-air="4.10" data-freight-cif="1.30" value="oslo">Puerto de Oslo / Drammen (Noruega)</option>
+</select>
+</div>
+</div>
+<!-- Column 2: Logistics Breakdown Ledger & Live Pro-forma (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-md space-y-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Desglose de Factura Pro-forma</span>
+<span class="font-label-sm text-label-sm font-mono text-outline">Cálculo en Dólares (USD)</span>
+</div>
+<!-- Line Items -->
+<div class="space-y-2 text-body-sm">
+<div class="flex justify-between items-center py-1">
+<div>
+<span class="font-semibold text-on-surface block" id="summaryLotTitle">Geisha Anaeróbico 96h (Monteverde)</span>
+<span class="text-outline text-xs" id="summaryWeight">10 sacos • 771.6 lbs netas</span>
+</div>
+<span class="font-numeric-data text-base font-bold text-on-surface" id="summaryCoffeeSubtotal">$14,274.60</span>
+</div>
+<div class="flex justify-between items-center py-1 text-on-surface-variant">
+<span>Trilla en Seco &amp; Empaque GrainPro de Origen</span>
+<span class="font-mono font-medium" id="summaryMilling">$280.00</span>
+</div>
+<div class="flex justify-between items-center py-1 text-on-surface-variant">
+<span>Guía Nacional FNC + Certificado Fitosanitario ICA</span>
+<span class="font-mono font-medium" id="summaryCert">$195.00</span>
+</div>
+<div class="flex justify-between items-center py-1 text-on-surface-variant">
+<span>Agenciamiento Aduanero y Cargue a Bordo (FOB)</span>
+<span class="font-mono font-medium" id="summaryFobHandling">$450.00</span>
+</div>
+<div class="flex justify-between items-center py-1 text-secondary" id="freightRow">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">directions_boat</span>
+                    Flete Marítimo Internacional LCL (Consolidado) + Póliza
+                  </span>
+<span class="font-mono font-bold" id="summaryFreight">$1,118.82</span>
+</div>
+</div>
+<!-- Micro-Total Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest border-t-2 border-primary space-y-1">
+<div class="flex justify-between items-baseline">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Total Liquidado Estimado (FOB / CIF)</span>
+<span class="font-numeric-data text-2xl font-bold text-primary" id="summaryGrandTotal">$16,318.42 USD</span>
+</div>
+<div class="flex justify-between text-xs text-outline font-mono">
+<span>Costo unitario puesto en destino:</span>
+<span class="font-bold text-secondary" id="unitCostLb">$21.15 USD / lb</span>
+</div>
+</div>
+</div>
+<!-- Buyer Dispatch Actions -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex flex-col sm:flex-row items-center gap-space-sm">
+<button class="w-full sm:w-1/2 py-2.5 px-space-md rounded bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-all shadow-sm flex items-center justify-center gap-2" onclick="alert('Se ha generado el borrador oficial de Factura Pro-Forma con validez de 7 días. Se ha enviado una copia a su casilla institucional.')" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+                  Descargar Pro-forma CIF
+                </button>
+<button class="w-full sm:w-1/2 py-2.5 px-space-md rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2" onclick="alert('Muestra verde de 250g solicitada. Código de rastreo DHL Express generado con cargo a su cuenta fiduciaria.')" type="button">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+                  Solicitar Muestra de 250g
+                </button>
+</div>
+<p class="text-[11px] text-outline text-center">
+                Despachos consolidados quincenales desde Puerto Buenaventura. Tránsito marítimo: 18-24 días a Asia, 14-18 días a Europa.
+              </p>
+</div>
+</div>
+</form>
+</section>
+<!-- Toast Notification Anchor (Interactive feedback) -->
+<div class="fixed bottom-6 right-6 max-w-md bg-inverse-surface text-inverse-on-surface p-space-sm rounded-xl shadow-2xl border-l-4 border-secondary-fixed hidden transition-all duration-300 z-50" id="liveAuctionToast">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">verified</span>
+<div class="flex-1 text-xs">
+<span class="font-bold text-secondary-fixed block text-sm">¡Puja Confirmada en Red Escrow!</span>
+<p class="text-inverse-on-surface/80" id="toastMessage">Tu oferta de $18.75 USD/lb por el Lote Geisha Anaeróbico es actualmente la oferta líder.</p>
+</div>
+<button class="text-inverse-on-surface/50 hover:text-inverse-on-surface" onclick="document.getElementById('liveAuctionToast').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter Slider Updates
+  const scoreSlider = document.getElementById('scoreSlider');
+  const scoreDisplay = document.getElementById('scoreDisplay');
+  if (scoreSlider && scoreDisplay) {
+    scoreSlider.addEventListener('input', (e) => {
+      scoreDisplay.innerText = `${parseFloat(e.target.value).toFixed(1)} – 94.5+`;
+    });
+  }
+
+  const altSlider = document.getElementById('altSlider');
+  const altDisplay = document.getElementById('altDisplay');
+  if (altSlider && altDisplay) {
+    altSlider.addEventListener('input', (e) => {
+      altDisplay.innerText = `${parseInt(e.target.value).toLocaleString()} msnm`;
+    });
+  }
+
+  // Filter Chips Toggle
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      if (chip.classList.contains('bg-primary-container')) {
+        chip.classList.remove('bg-primary-container', 'text-on-primary');
+        chip.classList.add('bg-surface-container', 'text-on-surface');
+      } else {
+        chip.classList.remove('bg-surface-container', 'text-on-surface');
+        chip.classList.add('bg-primary-container', 'text-on-primary');
+      }
+    });
+  });
+
+  // Live Auction Logic
+  let currentBid = 18.50;
+  const bidInput = document.getElementById('customBidInput');
+  const currentBidDisplay = document.getElementById('currentBidPrice');
+  const lotTotalPreview = document.getElementById('lotTotalPreview');
+  const submitBidBtn = document.getElementById('submitBidBtn');
+  const bidStream = document.getElementById('bidStream');
+  const toast = document.getElementById('liveAuctionToast');
+  const toastMsg = document.getElementById('toastMessage');
+
+  window.setBidDelta = function(delta) {
+    if (!bidInput) return;
+    const nextVal = (currentBid + delta).toFixed(2);
+    bidInput.value = nextVal;
+  };
+
+  if (submitBidBtn) {
+    submitBidBtn.addEventListener('click', () => {
+      const offered = parseFloat(bidInput.value);
+      if (offered <= currentBid) {
+        alert(`La puja debe superar la oferta actual de $${currentBid.toFixed(2)} USD/lb por al menos $0.25.`);
+        return;
+      }
+
+      currentBid = offered;
+      currentBidDisplay.innerText = `$${currentBid.toFixed(2)} USD`;
+      bidInput.value = (currentBid + 0.25).toFixed(2);
+      
+      // Update lot total preview (1,078 lbs)
+      const total = (currentBid * 1078).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      lotTotalPreview.innerText = `Valor Total Lote: $${total}`;
+
+      // Prepend to stream
+      const newBidRow = document.createElement('div');
+      newBidRow.className = "flex items-center justify-between p-2 rounded bg-surface-container-highest/20 border-l-2 border-primary";
+      newBidRow.innerHTML = `
+        <div class="flex items-center gap-2">
+          <span class="text-base" title="Tu Casa de Café">☕</span>
+          <div>
+            <span class="text-secondary-fixed font-semibold block">Tú (Comprador Institucional)</span>
+            <span class="text-[10px] text-inverse-on-surface/60">En directo &bull; Justo ahora</span>
+          </div>
+        </div>
+        <span class="font-bold text-secondary-fixed">$${currentBid.toFixed(2)} / lb</span>
+      `;
+      bidStream.insertBefore(newBidRow, bidStream.firstChild);
+
+      // Trigger Toast
+      toastMsg.innerText = `Tu oferta de $${currentBid.toFixed(2)} USD/lb por el Lote Geisha Anaeróbico ha sido registrada con éxito.`;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 5000);
+    });
+  }
+
+  // Synchronized countdown timer simulation
+  let totalSeconds = 3 * 3600 + 42 * 60 + 18;
+  const countdownEl = document.getElementById('countdownTimer');
+  setInterval(() => {
+    if (totalSeconds > 0) {
+      totalSeconds--;
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      if (countdownEl) {
+        countdownEl.innerText = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      }
+    }
+  }, 1000);
+
+  // Proforma Quotation Calculator
+  const lotSelect = document.getElementById('quoteLotSelect');
+  const sacksInput = document.getElementById('quoteSacksInput');
+  const destinationSelect = document.getElementById('destinationPort');
+  const incotermRadios = document.getElementsByName('incoterm');
+
+  function calculateQuote() {
+    if (!lotSelect || !sacksInput) return;
+
+    const selectedOption = lotSelect.options[lotSelect.selectedIndex];
+    const pricePerLb = parseFloat(selectedOption.getAttribute('data-price') || "12.00");
+    const lotName = selectedOption.text.split(' - ')[0];
+    const sacks = parseInt(sacksInput.value) || 1;
+    
+    // Standard specialty bag: 35kg net = ~77.16 lbs net
+    const totalPounds = sacks * 77.16;
+    const coffeeSubtotal = totalPounds * pricePerLb;
+    const milling = sacks * 28.00;
+    const certFee = 195.00;
+    const fobHandling = 450.00;
+
+    let incotermVal = "FOB";
+    for (const r of incotermRadios) {
+      if (r.checked) incotermVal = r.value;
+    }
+
+    const destOption = destinationSelect.options[destinationSelect.selectedIndex];
+    const freightPerLb = parseFloat(destOption.getAttribute('data-freight-cif') || "1.20");
+
+    let freightTotal = 0;
+    const freightRow = document.getElementById('freightRow');
+    if (incotermVal === 'CIF') {
+      freightTotal = totalPounds * freightPerLb;
+      if (freightRow) freightRow.style.display = 'flex';
+    } else {
+      if (freightRow) freightRow.style.display = 'none';
+    }
+
+    const grandTotal = coffeeSubtotal + milling + certFee + fobHandling + freightTotal;
+    const unitPriceDest = grandTotal / totalPounds;
+
+    // DOM Updates
+    document.getElementById('summaryLotTitle').innerText = lotName;
+    document.getElementById('summaryWeight').innerText = `${sacks} sacos de 35kg • ${totalPounds.toFixed(1)} lbs netas`;
+    document.getElementById('summaryCoffeeSubtotal').innerText = `$${coffeeSubtotal.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById('summaryMilling').innerText = `$${milling.toFixed(2)}`;
+    document.getElementById('summaryFreight').innerText = `$${freightTotal.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById('summaryGrandTotal').innerText = `$${grandTotal.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})} USD`;
+    document.getElementById('unitCostLb').innerText = `$${unitPriceDest.toFixed(2)} USD / lb`;
+  }
+
+  // Pre-fill from catalog buttons
+  window.prefillQuote = function(lotTitle, sacks, price) {
+    if (!lotSelect || !sacksInput) return;
+    
+    for (let i = 0; i < lotSelect.options.length; i++) {
+      if (lotSelect.options[i].text.includes(lotTitle.substring(0, 15))) {
+        lotSelect.selectedIndex = i;
+        break;
+      }
+    }
+    sacksInput.value = sacks;
+    calculateQuote();
+    
+    // Smooth scroll to quote section
+    const quoteSection = document.getElementById('quoteForm');
+    if (quoteSection) {
+      quoteSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  // Wire events
+  if (lotSelect) lotSelect.addEventListener('change', calculateQuote);
+  if (sacksInput) sacksInput.addEventListener('input', calculateQuote);
+  if (destinationSelect) destinationSelect.addEventListener('change', calculateQuote);
+  incotermRadios.forEach(radio => radio.addEventListener('change', calculateQuote));
+
+  // Reset Filters handler
+  const resetBtn = document.getElementById('resetFiltersBtn');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      if (scoreSlider) { scoreSlider.value = 88; scoreDisplay.innerText = "88.0 – 94.5+"; }
+      if (altSlider) { altSlider.value = 1750; altDisplay.innerText = "1,750 msnm"; }
+    });
+  }
+
+  // Initialize calculations on first load
+  calculateQuote();
+</script></main><footer class="w-full bg-surface-container-low py-space-lg px-space-lg"><div class="w-full flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-lg"><span class="material-symbols-outlined text-secondary text-[16px]">workspace_premium</span><span class="font-label-sm text-label-sm font-bold text-on-surface">Especialidad SCA • Cup of Excellence Standard</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-lg"><span class="material-symbols-outlined text-primary text-[16px]">shield</span><span class="font-label-sm text-label-sm font-bold text-on-surface">Custodia Fiduciaria Agraria</span></div></div><div class="text-center md:text-right"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Origen Noble. Microfinanzas Éticas y Café de Alta Especialidad.</p></div></div></footer></div></body></html>

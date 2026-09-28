@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#f1dfd8","error-container":"#ffdad6","on-surface-variant":"#54433a","on-tertiary-container":"#c1d4c1","surface-tint":"#934b19","on-background":"#231916","tertiary-container":"#4b5c4e","inverse-primary":"#ffb68c","inverse-surface":"#392e2a","tertiary":"#344537","error":"#ba1a1a","tertiary-fixed":"#d5e7d5","surface-container":"#fdeae3","primary-fixed-dim":"#ffb68c","on-tertiary-fixed":"#101f13","primary-fixed":"#ffdbc9","tertiary-fixed-dim":"#b9cbb9","on-tertiary":"#ffffff","secondary-fixed-dim":"#a1d494","outline":"#877369","primary-container":"#8b4513","secondary-container":"#b9eeab","on-primary-fixed-variant":"#753401","surface-dim":"#e8d6d0","on-error":"#ffffff","surface-bright":"#fff8f6","on-secondary":"#ffffff","secondary":"#3b6934","on-secondary-container":"#3f6d38","surface-container-highest":"#f1dfd8","primary":"#6c2f00","outline-variant":"#dac2b6","on-secondary-fixed-variant":"#23501e","secondary-fixed":"#bcf0ae","on-primary-container":"#ffc29f","background":"#fff8f6","on-secondary-fixed":"#002201","surface-container-low":"#fff1ec","surface-container-high":"#f7e4de","on-primary":"#ffffff","on-surface":"#231916","inverse-on-surface":"#ffede7","on-tertiary-fixed-variant":"#3a4b3d","surface-container-lowest":"#ffffff","on-error-container":"#93000a","on-primary-fixed":"#321200","surface":"#fff8f6"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","gutter":"1.5rem","space-md":"1rem","margin-mobile":"1.25rem","space-lg":"1.5rem","margin":"3rem","gutter-mobile":"1rem","space-xl":"2.5rem"},"fontFamily":{"headline-lg":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Playfair Display"],"display-lg":["Playfair Display"],"label-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"headline-md":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"numeric-data":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"]},"fontSize":{"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"numeric-data":["24px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(44,34,30,0.06)]"><div class="w-full h-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Origen Noble Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UNWIHn9P5Xj9VZ8_idQE7axcfI3RySCBO2csZTRhYHgdtpIVOS7vWqGnd3OoEqba05LWjcVLpAss2FAL3-QnTa4YsJ-q7yKkSJAWfMyFzDNktQyBJcvKMzdKZqENYi0Xs3EyL0xsPa3WSFepujur-86mOuI16htbyQEqumcVuUzn9CKxxiC6kCb-qLqOVbeCJTKMORF0r2lncwqU0_Al9ZYla0t5-S8-C1DcIcdQ4rfRmAnPZB4jk2Xc6n"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-semibold leading-tight">Origen Noble</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Café &amp; Microfinanzas</span></div></div><nav class="hidden xl:flex items-center gap-space-md ml-space-lg" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard-central" href="#">Dashboard</a><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="marketplace-subastas" href="#">Marketplace &amp; Subastas</a><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="microprestamos" href="#">Micropréstamos</a><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="trazabilidad-lotes" href="#">Trazabilidad</a><a class="px-space-sm py-1 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="reportes-financieros" href="#">Reportes</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container rounded-lg p-0.5"><button class="px-2 py-0.5 font-label-sm text-label-sm rounded bg-surface-container-lowest text-primary font-bold shadow-sm" type="button">ES</button><button class="px-2 py-0.5 font-label-sm text-label-sm rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">EN</button></div><button aria-label="Alertas de Subasta" class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4kAPF5cJRe6A9vjFEW1r89Af8hKGOzZm17tHWoNL8fTavssg2cZO7KlqArsrr-xr-WIKCUaAed9QwlYUHfsyKFrmOP_7RV36P6_A2qXJr6x2iDMJJFErfXsF405_W2Km5z7GDIRA59GtXGZBN13RtptOjIggzT-AgHjSi-cH61LLZR3p1hAapvpRW6q4ka6WjYLjWAnhKvjX09hpmoC1uDvqtHMiFUIWNu_WsfGbwZAk9bX1bkICB9Q"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Ing. María Rodríguez</span><span class="font-label-sm text-label-sm text-secondary font-medium">Q-Grader Certificada #8492</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 hidden lg:flex flex-col justify-between py-space-lg px-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-sm"><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Panel Operativo</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard-central" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Resumen Agrícola</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="marketplace-subastas" href="#"><span class="material-symbols-outlined text-[20px]">gavel</span><span>Mesa de Subastas</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="microprestamos" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span>Líneas de Crédito</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="trazabilidad-lotes" href="#"><span class="material-symbols-outlined text-[20px]">qr_code_scanner</span><span>Fincas y Catación</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reportes-financieros" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Libro Mayor &amp; Cosecha</span></a></nav></div><div class="p-space-sm rounded-xl bg-surface-container space-y-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span><span class="font-label-sm text-label-sm font-semibold text-secondary uppercase">Protocolo SCA</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Monitoreo de cosechas activas y garantías de café pergamino seco.</p></div></aside><div class="lg:pl-64"><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Visual Scrim & Agrarian Context Banner -->
+<section class="relative w-full px-space-lg lg:px-margin pt-space-lg pb-space-xl overflow-hidden">
+<div class="absolute inset-0 pointer-events-none opacity-30">
+<div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary-container blur-3xl"></div>
+<div class="absolute top-12 right-0 w-[500px] h-[500px] rounded-full bg-secondary-container blur-3xl"></div>
+</div>
+<!-- Editorial Header Grid -->
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end mb-space-xl">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm tracking-wider uppercase">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+            Fondo Solidario de Cosecha Futura
+          </span>
+<span class="font-label-sm text-label-sm text-outline font-mono">FONDO-AGRO-2024.3</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-serif">
+          Financiamiento Productivo respaldado por Cosecha Futura
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+          Crédito rotatorio fiduciario a tasa fija preferencial (<strong class="text-secondary font-semibold">6.5% E.A.</strong>) diseñado exclusivamente para caficultores de alta especialidad. Amortización sincronizada con los flujos de recolección y opción de liquidación en grano pergamino seco bajo primas SCA.
+        </p>
+</div>
+<div class="lg:col-span-4 flex lg:justify-end">
+<div class="p-space-md rounded-xl bg-surface-container shadow-sm flex flex-col gap-1 w-full max-w-xs">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Fondo Comunitario Asignado</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+</div>
+<div class="font-numeric-data text-numeric-data text-on-surface">$1,450,000 USD</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 68%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>68% Colocado (84 fincas)</span>
+<span class="text-secondary font-semibold">$464k Disp.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3 Core Tenets Micro-strip -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="p-2.5 rounded bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[24px]">calendar_month</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Periodo de Gracia Estacional</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cero amortizaciones de capital durante floración y maduración temprana.</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="p-2.5 rounded bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Liquidación en Especie</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Posibilidad de pago directo con café micro-lote calificado por encima de 85 PTS.</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="p-2.5 rounded bg-surface-container text-surface-tint">
+<span class="material-symbols-outlined text-[24px]">format_image_left</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Custodia Fiduciaria Ética</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sin hipoteca de tierras. La garantía se soporta en el registro y volumen del lote.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Interactive Credit Simulator (7:5 Split) -->
+<section class="w-full px-space-lg lg:px-margin py-space-xl bg-surface-container-low" id="simulador">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-semibold">Herramienta Fiduciaria</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-serif">Simulador Interactivo de Crédito Productivo</h2>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">info</span>
+          Tasas de corte mensual indexadas con prima garantizada
+        </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Controls (7 Columns) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface">Configuración de Solicitud</span>
+<span class="px-space-sm py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Tasa Fija 6.50% E.A.</span>
+</div>
+<!-- Slider 1: Amount -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="input-amount">Monto a Solicitar</label>
+<div class="flex items-baseline gap-1 text-primary">
+<span class="font-headline-sm text-headline-sm font-serif">$</span>
+<span class="font-numeric-data text-numeric-data" id="label-amount">8,500</span>
+<span class="font-label-sm text-label-sm uppercase text-outline">USD</span>
+</div>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary-container" id="input-amount" max="25000" min="1500" step="500" type="range" value="8500"/>
+<div class="flex justify-between font-label-sm text-label-sm text-outline pt-1">
+<span>$1,500 USD (Mín)</span>
+<span>$12,500 USD</span>
+<span>$25,000 USD (Máx)</span>
+</div>
+</div>
+<!-- Slider 2: Term -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="input-term">Plazo de Amortización (Cosechas)</label>
+<div class="flex items-baseline gap-1 text-on-surface">
+<span class="font-numeric-data text-numeric-data" id="label-term">18</span>
+<span class="font-label-md text-label-md text-outline">meses</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded font-medium" id="label-cycles">(1.5 ciclos de recolección)</span>
+</div>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary-container" id="input-term" max="36" min="6" step="6" type="range" value="18"/>
+<div class="flex justify-between font-label-sm text-label-sm text-outline pt-1">
+<span>6 Meses (1 Mitaca)</span>
+<span>18 Meses (Media)</span>
+<span>36 Meses (3 Cosechas)</span>
+</div>
+</div>
+<!-- Frequency & Grace Period Selector -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-outline uppercase" for="frequency-select">Modalidad de Cuota</label>
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded p-2 focus:outline-none" id="frequency-select">
+<option selected="" value="harvest">Trimestral Agrícola (Post-cosecha)</option>
+<option value="monthly">Mensual Regular</option>
+</select>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-outline uppercase">Periodo de Gracia</label>
+<div class="flex items-center justify-between h-full px-2">
+<span class="font-label-md text-label-md text-secondary font-medium">4 meses de floración</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">spa</span>
+</div>
+</div>
+</div>
+<!-- SVG Seasonal Cash Flow Chart -->
+<div class="pt-space-xs">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Flujo de Amortización Sincronizado vs. Cosecha</span>
+<span class="font-label-sm text-label-sm text-secondary">Recolección Principal: Nov - Feb</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<svg class="w-full h-20 text-secondary" fill="none" viewbox="0 0 500 80">
+<!-- Curve background -->
+<path d="M0,70 Q70,70 120,45 T250,15 T370,65 T500,20 L500,80 L0,80 Z" fill="currentColor" fill-opacity="0.12"></path>
+<!-- Harvest yield wave -->
+<path d="M0,70 Q70,70 120,45 T250,15 T370,65 T500,20" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Repayment points -->
+<circle class="fill-primary-container" cx="120" cy="45" r="4.5"></circle>
+<circle class="fill-primary" cx="250" cy="15" r="5"></circle>
+<circle class="fill-primary-container" cx="370" cy="65" r="4"></circle>
+<circle class="fill-primary" cx="480" cy="24" r="5"></circle>
+</svg>
+<div class="flex justify-between font-label-sm text-label-sm text-outline mt-1 px-1">
+<span>Floración (Gracia)</span>
+<span>Cosecha Mitaca</span>
+<span>Maduración Lenta</span>
+<span>Cosecha Mayor (Liquidación)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Output Ledger & Coffee Grain Settlement Option (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-highest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md text-on-surface">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Liquidación Estimada</span>
+<span class="font-label-sm text-label-sm text-outline">Simulación fiduciaria v4.1</span>
+</div>
+<!-- Big Stat -->
+<div class="flex flex-col gap-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cuota Periódica Estimada</span>
+<div class="flex items-baseline gap-1 text-primary">
+<span class="font-headline-lg text-headline-lg font-serif">$</span>
+<span class="font-display-lg text-display-lg-mobile lg:text-display-lg leading-none font-bold" id="output-payment">1,489</span>
+<span class="font-label-md text-label-md text-outline">USD / Trimestre</span>
+</div>
+</div>
+<!-- Breakdown Matrix -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Capital Amortizable</span>
+<span class="font-numeric-data text-numeric-data text-on-surface" id="output-principal">$8,500</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Intereses Totales (6.5%)</span>
+<span class="font-numeric-data text-numeric-data text-secondary" id="output-interest">$436</span>
+</div>
+</div>
+<!-- Settlement in Species Option (Coffee bags) -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+<span class="font-label-md text-label-md font-bold uppercase">Opción de Pago en Especie</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">FOB Especialidad</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Equivalente aproximado a entregar en beneficio fiduciario:
+              </p>
+<div class="flex items-baseline justify-between pt-1">
+<div>
+<span class="font-numeric-data text-numeric-data text-primary font-bold" id="output-bags">4.2</span>
+<span class="font-label-md text-label-md text-on-surface"> sacos pergamino (70kg)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">@ $354 USD/saco base 86+</span>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary py-3 rounded-lg font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs hover:bg-primary transition-all shadow-md" onclick="document.getElementById('solicitud-wizard').scrollIntoView({behavior: 'smooth'})" type="button">
+<span>Vincular a Mi Solicitud</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+<!-- Micro Guarantee Notice -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Tasa regulada por la Cooperativa Fiduciaria. Sin comisiones ocultas por desembolso ni penalidades por pago anticipado.
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Eligible Infrastructure Projects Catalog -->
+<section class="w-full px-space-lg lg:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-semibold">Inversión Productiva con Impacto</span>
+<h2 class="font-headline-md text-headline-md text-primary font-serif">Catálogo de Proyectos Homologados</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Tecnologías validadas que aumentan el perfil de taza SCA e incrementan la rentabilidad por hectárea con mínima huella ecológica.
+        </p>
+</div>
+<!-- Bento Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Project 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A modern parabolic solar greenhouse with layered African drying beds for specialty green coffee beans, golden morning sunlight diffusing through polycarbonate panels in the Colombian Andes mountains, terracotta and lush green tones, documentary editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC33JRVTzXmWY_Vq5dmpvWLkXkd2LoLIkWqjgtWNgvxBxlDlVsgbP-5hMCU3xXy4GZPCm58WFfF5UB5ahiiQHJQ1Ca3LKUVbEhSgUayW8GojLe3cuXASCskNv5zP1oG2YOVlLbs3zGaBhY3NC9jgyWao7lBT4S3qUYuXTxEl4eH9r8EtYti5oES4OFLN8Oo1o_4yc4jy_kkalcUEkT1zh9nBs7ciczqOgFNc7W_5bBvuehrIoc-KrTaHg"/>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">
+                +2.5 Pts SCA
+              </div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">wb_sunny</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Secado Controlado</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Marquesinas Solares con Ventilación Forzada</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Estructura parabólica en policarbonato con sensores térmicos solares y camas africanas multinivel para estabilización de humedad al 10.5%.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex flex-col gap-2">
+<div class="flex justify-between items-baseline font-label-sm text-label-sm text-on-surface">
+<span class="text-outline">Rango de Costo:</span>
+<strong class="font-mono text-primary">$3,200 - $6,500 USD</strong>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold rounded flex items-center justify-center gap-1 transition-colors" onclick="selectProject('Marquesinas Solares de Secado Controlado', 4800)" type="button">
+<span>Seleccionar Proyecto</span>
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+</button>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An advanced ecological coffee wet mill processing station with stainless steel recycling tanks and gravity filtration pipes, clean agrarian architecture surrounded by lush coffee trees, warm natural light, cinematic documentary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFHQ43rCglsdNo8Xzk9TaaaHcBBLGv38QJNvBITZBEjA2MU--xlxGSs0XUhhm3o2zSQ5Ydk8xsKTzaBpf7RkWVl7mV7nZ9Li_MFAAiB24NEtw_WJMYmJA-gOljkYvZSWt-aBD0kPwdU730q1l4KqNVaDxofAdwODO8cEZsqwMPRT2UywWLqD_k-ESeeSOcKWs60TCkYkFzGCla-UdWi-Di5T6-U0VgFOCusUjKLuV6jDzOX5MlkbcLNw"/>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-label-sm text-label-sm font-semibold">
+                -95% Huella Hídrica
+              </div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Gestión Hídrica</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Beneficiaderos Ecológicos Modulares</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Tecnología de circuito cerrado de recirculación que reduce el consumo de 40L a menos de 1.8L por kilogramo de pergamino seco exportable.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex flex-col gap-2">
+<div class="flex justify-between items-baseline font-label-sm text-label-sm text-on-surface">
+<span class="text-outline">Rango de Costo:</span>
+<strong class="font-mono text-primary">$7,000 - $14,500 USD</strong>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold rounded flex items-center justify-center gap-1 transition-colors" onclick="selectProject('Beneficiadero Ecológico Compacto', 9500)" type="button">
+<span>Seleccionar Proyecto</span>
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+</button>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Food-grade stainless steel fermentation tanks for specialty coffee cherries with digital temperature valves and pressure gauges in an artisanal micro-roastery wet lab, warm earth tones, editorial agriculture aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsf83TozOmPRIxlFNkFo42oWCoP14OyrYon0-8UTLOM69EY_5fQZAh67xzIKiqR72bupVbK7cWLmDL25UzqHSrWHae9fru-YUXxBln7ubpujyvYYPUK_kpq-HMa1VYbwUIeCyl7pd-ThdQpHolP38qCGdD2bK53ch9Y0X5NsQSD1RRRNqQPtU7uujXyRlGwE1M-6RWvcVdRoyg2hnEQ649XIZvoRQGFNxRrZh9rCxABIjczJoMzfEl3Q"/>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">
+                Anaeróbico &amp; Maceración
+              </div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">thermostat</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Biotecnología</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Tanques de Fermentación Inoxidable AISI 304</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Reactores herméticos con chaqueta de enfriamiento y válvulas de venteo unidireccionales para fermentaciones anaeróbicas de alta precisión.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex flex-col gap-2">
+<div class="flex justify-between items-baseline font-label-sm text-label-sm text-on-surface">
+<span class="text-outline">Rango de Costo:</span>
+<strong class="font-mono text-primary">$4,500 - $8,900 USD</strong>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold rounded flex items-center justify-center gap-1 transition-colors" onclick="selectProject('Tanques de Tina Inoxidable AISI 304', 6200)" type="button">
+<span>Seleccionar Proyecto</span>
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+</button>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Mechanical vertical waterless coffee depulper machinery in an organized rustic farm mill, showing freshly picked ripe red coffee cherries being mechanically sorted without water, warm lighting, agrarian high-precision vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASUK8u4nRFF2xq_ucBvq5SxQoh8J9eHdc6n46mUmF356yCEoVHUVUSEHVBT4FDMif-LiULGex3PifGXtBf1oPOYLfQjetdqZpJNtDsGw6lzK_PBpIC464UxVTzRXz7wqsohUGBtkdnuEgZzmd1clVKhlgwjYovOhKbp9kgPsPogqDcwjlLAne7rxeIqPc6XmysxW9Cn8B1XEmsiy6k1i6vTqrB60LDEuqg0_KBaEZ1EA3IqJNG8PKnzg"/>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                Cero Granos Mordidos
+              </div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Eficiencia Motriz</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Despulpadoras Ecológicas Sin Agua</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Unidades verticales con tambor de pechero flexible calibrable, impulsadas por motores solares híbridos de bajo amperaje.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex flex-col gap-2">
+<div class="flex justify-between items-baseline font-label-sm text-label-sm text-on-surface">
+<span class="text-outline">Rango de Costo:</span>
+<strong class="font-mono text-primary">$2,800 - $5,400 USD</strong>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold rounded flex items-center justify-center gap-1 transition-colors" onclick="selectProject('Despulpadora Vertical sin Agua', 3400)" type="button">
+<span>Seleccionar Proyecto</span>
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Guided Step-by-Step Application Wizard -->
+<section class="w-full px-space-lg lg:px-margin py-space-xl bg-surface-container-low" id="solicitud-wizard">
+<div class="max-w-4xl mx-auto flex flex-col gap-space-lg">
+<div class="text-center space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-semibold">Ventanilla Única Cafetera</span>
+<h2 class="font-headline-md text-headline-md text-primary font-serif">Formulario de Solicitud de Micropréstamo</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Las solicitudes son evaluadas bajo criterios técnicos agronómicos por el Comité Comunitario en menos de 72 horas.
+        </p>
+</div>
+<!-- Step Indicator Ribbon -->
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-lowest p-1.5 rounded-xl shadow-sm">
+<button class="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md transition-all" id="tab-step-1" onclick="switchStep(1)" type="button">
+<span class="w-5 h-5 rounded-full bg-on-primary text-primary-container font-mono text-xs flex items-center justify-center font-bold">1</span>
+<span class="hidden sm:inline">Finca &amp; Caficultor</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all" id="tab-step-2" onclick="switchStep(2)" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-variant text-on-surface-variant font-mono text-xs flex items-center justify-center font-bold">2</span>
+<span class="hidden sm:inline">Infraestructura</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all" id="tab-step-3" onclick="switchStep(3)" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-variant text-on-surface-variant font-mono text-xs flex items-center justify-center font-bold">3</span>
+<span class="hidden sm:inline">Historial &amp; Documentos</span>
+</button>
+</div>
+<!-- Step Cards Container -->
+<form class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md" id="loan-form" onsubmit="submitLoanApplication(event)">
+<!-- STEP 1 CONTENT -->
+<div class="flex flex-col gap-space-md" id="step-panel-1">
+<div class="border-b-0 pb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Paso 1: Identificación y Registro Agrario</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verificación de pertenencia a comités y parámetros de altura geográfica.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="finca-name">Nombre de la Finca o Parcela</label>
+<input class="w-full bg-surface-container-low rounded p-2.5 font-body-md text-body-md text-on-surface focus:outline-none" id="finca-name" required="" type="text" value="Finca El Mirador de Santa María"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="producer-id">Cédula Cafetera / Registro Comité</label>
+<input class="w-full bg-surface-container-low rounded p-2.5 font-body-md text-body-md text-on-surface focus:outline-none font-mono" id="producer-id" required="" type="text" value="CC-894-209-HUILA"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="farm-altitude">Altitud Promedio (msnm)</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low rounded p-2.5 font-body-md text-body-md text-on-surface focus:outline-none" id="farm-altitude" required="" type="number" value="1780"/>
+<span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-outline">msnm</span>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="farm-area">Área Cultivada en Café (Hectáreas)</label>
+<input class="w-full bg-surface-container-low rounded p-2.5 font-body-md text-body-md text-on-surface focus:outline-none" id="farm-area" required="" step="0.5" type="number" value="4.5"/>
+</div>
+<div class="md:col-span-2 space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="varieties">Variedades Botánicas Predominantes</label>
+<input class="w-full bg-surface-container-low rounded p-2.5 font-body-md text-body-md text-on-surface focus:outline-none" id="varieties" required="" type="text" value="Geisha (30%), Bourbon Rosado (40%), Castillo Tambo (30%)"/>
+</div>
+</div>
+<div class="flex justify-end pt-space-sm">
+<button class="px-space-lg py-2.5 rounded bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-1 hover:bg-primary transition-all" onclick="switchStep(2)" type="button">
+<span>Continuar a Infraestructura</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- STEP 2 CONTENT -->
+<div class="hidden flex-col gap-space-md" id="step-panel-2">
+<div class="border-b-0 pb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Paso 2: Selección Técnica y Cotización Homologada</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Detalle del equipo requerido e información del proveedor autorizado.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="md:col-span-2 space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="infra-type">Proyecto de Infraestructura a Financiar</label>
+<select class="w-full bg-surface-container-low rounded p-2.5 font-body-md text-body-md text-on-surface focus:outline-none" id="infra-type">
+<option value="Marquesinas Solares de Secado Controlado">Marquesinas Solares de Secado Controlado (Ventilación forzada)</option>
+<option value="Beneficiadero Ecológico Compacto">Beneficiadero Ecológico Compacto (-95% consumo agua)</option>
+<option selected="" value="Tanques de Tina Inoxidable AISI 304">Tanques de Tina Inoxidable AISI 304 (Control térmico)</option>
+<option value="Despulpadora Vertical sin Agua">Despulpadora Vertical sin Agua (Cero mordeduras)</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="vendor-name">Proveedor Homologado</label>
+<input class="w-full bg-surface-container-low rounded p-2.5 font-body-md text-body-md text-on-surface focus:outline-none" id="vendor-name" required="" type="text" value="AgroTecnología Cafetera del Sur S.A.S."/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="quote-amount">Monto Cotizado (USD)</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low rounded p-2.5 font-body-md text-body-md text-on-surface focus:outline-none" id="quote-amount" required="" type="number" value="6200"/>
+<span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-outline">USD</span>
+</div>
+</div>
+<div class="md:col-span-2 space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="tech-justification">Justificación Técnica del Impacto en Calidad</label>
+<textarea class="w-full bg-surface-container-low rounded p-2.5 font-body-md text-body-md text-on-surface focus:outline-none" id="tech-justification" rows="2">La instalación de las tinas de acero inoxidable permitirá estandarizar fermentaciones anaeróbicas de 72 horas para elevar los lotes de Bourbon Rosado de 85.5 a 88.5 puntos de taza SCA.</textarea>
+</div>
+</div>
+<div class="flex justify-between pt-space-sm">
+<button class="px-space-md py-2.5 rounded bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all" onclick="switchStep(1)" type="button">
+              Atrás
+            </button>
+<button class="px-space-lg py-2.5 rounded bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-1 hover:bg-primary transition-all" onclick="switchStep(3)" type="button">
+<span>Continuar a Historial</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- STEP 3 CONTENT -->
+<div class="hidden flex-col gap-space-md" id="step-panel-3">
+<div class="border-b-0 pb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Paso 3: Historial Productivo y Soporte Documental</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Respaldos de cosechas anteriores para fijar la línea de crédito.</p>
+</div>
+<!-- Harvest History 3 Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Cosecha 2022/23</span>
+<div class="grid grid-cols-2 gap-1">
+<input class="bg-surface-container-lowest p-1.5 rounded font-label-sm text-label-sm text-on-surface" placeholder="Vol (Qqs)" type="text" value="120 Qqs"/>
+<input class="bg-surface-container-lowest p-1.5 rounded font-label-sm text-label-sm text-secondary font-bold" placeholder="Catación" type="text" value="86.2 SCA"/>
+</div>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Cosecha 2023/24</span>
+<div class="grid grid-cols-2 gap-1">
+<input class="bg-surface-container-lowest p-1.5 rounded font-label-sm text-label-sm text-on-surface" placeholder="Vol (Qqs)" type="text" value="145 Qqs"/>
+<input class="bg-surface-container-lowest p-1.5 rounded font-label-sm text-label-sm text-secondary font-bold" placeholder="Catación" type="text" value="87.0 SCA"/>
+</div>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Proyección 2024/25</span>
+<div class="grid grid-cols-2 gap-1">
+<input class="bg-surface-container-lowest p-1.5 rounded font-label-sm text-label-sm text-on-surface" placeholder="Vol (Qqs)" type="text" value="160 Qqs"/>
+<input class="bg-surface-container-lowest p-1.5 rounded font-label-sm text-label-sm text-secondary font-bold" placeholder="Catación" type="text" value="88.0 SCA"/>
+</div>
+</div>
+</div>
+<!-- Upload Targets -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col items-center justify-center text-center gap-1 cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary text-[28px]">description</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Certificado de Tradición o Tenencia</span>
+<span class="font-body-sm text-body-sm text-outline">Formato PDF, máx 10MB</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-1">Cargado: Cert_Finca_ElMirador.pdf (1.8 MB)</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col items-center justify-center text-center gap-1 cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-[28px]">photo_camera</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Fotografías del Área de Instalación</span>
+<span class="font-body-sm text-body-sm text-outline">JPG o PNG (Georreferenciadas)</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-1">Cargadas: 4 imágenes de beneficiadero</span>
+</div>
+</div>
+<!-- Declaration checkbox -->
+<div class="flex items-start gap-space-xs pt-1">
+<input checked="" class="mt-1 accent-primary" id="terms-agree" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="terms-agree">
+              Declaro bajo fe comunitaria que los lotes de café correspondientes a esta solicitud estarán bajo protocolo de custodia fiduciaria y serán procesados bajo estándares de sostenibilidad SCA.
+            </label>
+</div>
+<div class="flex justify-between pt-space-sm">
+<button class="px-space-md py-2.5 rounded bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all" onclick="switchStep(2)" type="button">
+              Atrás
+            </button>
+<button class="px-space-xl py-3 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center gap-2 hover:bg-primary transition-all shadow-md" id="btn-submit" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Enviar Solicitud a Comité Técnico</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</section>
+<!-- Section 5: Live Community Application Tracker Ledger -->
+<section class="w-full px-space-lg lg:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-semibold">Transparencia Colectiva</span>
+<h2 class="font-headline-md text-headline-md text-primary font-serif">Tablero de Solicitudes Comunitarias Activas</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Actualizado hace 12 min por Comité Fiduciario</span>
+</div>
+</div>
+<!-- Ledger Table Component -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Código Lote / Finca</th>
+<th class="py-space-sm px-space-md">Productor &amp; Vereda</th>
+<th class="py-space-sm px-space-md">Proyecto Seleccionado</th>
+<th class="py-space-sm px-space-md">Monto Aprobado</th>
+<th class="py-space-sm px-space-md">Puntaje Q-SCA</th>
+<th class="py-space-sm px-space-md">Estado Fiduciario</th>
+<th class="py-space-sm px-space-md text-right">Acción</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">MP-2024-089</span>
+<span class="font-body-sm text-body-sm text-outline">Finca La Esperanza</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Don Gilberto Osorio</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">San Agustín, 1,820 msnm</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-primary font-medium">Secador Solar Parabólico 80m²</span>
+</td>
+<td class="py-space-md px-space-md font-mono font-bold text-on-surface">
+                  $5,200 USD
+                </td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container font-mono text-secondary font-bold">88.5 PTS</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Desembolso Programado
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold underline" type="button">Ver Acta</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">MP-2024-092</span>
+<span class="font-body-sm text-body-sm text-outline">Hacienda Villa Julia</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Doña Carmenza Quintero</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pitalito, 1,750 msnm</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-primary font-medium">Beneficiadero Hídrico Ecológico</span>
+</td>
+<td class="py-space-md px-space-md font-mono font-bold text-on-surface">
+                  $12,400 USD
+                </td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container font-mono text-secondary font-bold">87.0 PTS</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Aprobado por Comité
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold underline" type="button">Firma Contrato</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">MP-2024-095</span>
+<span class="font-body-sm text-body-sm text-outline">El Paraíso Geisha</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Julián David Beltrán</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Acevedo, 1,910 msnm</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-primary font-medium">2x Tanques Inoxidables 600L</span>
+</td>
+<td class="py-space-md px-space-md font-mono font-bold text-on-surface">
+                  $7,800 USD
+                </td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container font-mono text-secondary font-bold">89.2 PTS</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                    En Revisión Técnica
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold underline" type="button">Ver Expediente</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Logic Script -->
+<script>
+    // Live Amortization Calculator Logic
+    const inputAmount = document.getElementById('input-amount');
+    const inputTerm = document.getElementById('input-term');
+    const frequencySelect = document.getElementById('frequency-select');
+
+    const labelAmount = document.getElementById('label-amount');
+    const labelTerm = document.getElementById('label-term');
+    const labelCycles = document.getElementById('label-cycles');
+
+    const outputPayment = document.getElementById('output-payment');
+    const outputPrincipal = document.getElementById('output-principal');
+    const outputInterest = document.getElementById('output-interest');
+    const outputBags = document.getElementById('output-bags');
+
+    function calculateAmortization() {
+      const principal = parseFloat(inputAmount.value);
+      const months = parseInt(inputTerm.value);
+      const annualRate = 0.065; // 6.5% E.A.
+      const isQuarterly = frequencySelect.value === 'harvest';
+
+      // Update basic labels
+      labelAmount.textContent = principal.toLocaleString('en-US');
+      labelTerm.textContent = months;
+      const cycles = (months / 12).toFixed(1);
+      labelCycles.textContent = `(${cycles} ciclos de recolección)`;
+
+      // Periods count
+      const periods = isQuarterly ? (months / 3) : months;
+      const periodicRate = isQuarterly ? (annualRate / 4) : (annualRate / 12);
+
+      // Payment calculation formula: PMT = P * r / (1 - (1+r)^-n)
+      const payment = (principal * periodicRate) / (1 - Math.pow(1 + periodicRate, -periods));
+      const totalRepaid = payment * periods;
+      const totalInterest = totalRepaid - principal;
+
+      // Bags in parchment coffee equivalent (assuming $354 USD per 70kg bag base)
+      const bagPriceUSD = 354;
+      const bagsRequired = (payment / bagPriceUSD).toFixed(1);
+
+      // DOM Updates
+      outputPayment.textContent = Math.round(payment).toLocaleString('en-US');
+      outputPrincipal.textContent = `$${Math.round(principal).toLocaleString('en-US')}`;
+      outputInterest.textContent = `$${Math.round(totalInterest).toLocaleString('en-US')}`;
+      outputBags.textContent = bagsRequired;
+    }
+
+    inputAmount.addEventListener('input', calculateAmortization);
+    inputTerm.addEventListener('input', calculateAmortization);
+    frequencySelect.addEventListener('change', calculateAmortization);
+
+    // Initial calculation trigger
+    calculateAmortization();
+
+    // Wizard Step Navigation
+    function switchStep(stepNumber) {
+      for (let i = 1; i <= 3; i++) {
+        const panel = document.getElementById(`step-panel-${i}`);
+        const tab = document.getElementById(`tab-step-${i}`);
+        if (i === stepNumber) {
+          panel.classList.remove('hidden');
+          panel.classList.add('flex');
+          tab.className = 'flex items-center justify-center gap-2 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md transition-all';
+        } else {
+          panel.classList.add('hidden');
+          panel.classList.remove('flex');
+          tab.className = 'flex items-center justify-center gap-2 py-2.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all';
+        }
+      }
+    }
+
+    // Select Project Shortcut
+    function selectProject(projectName, suggestedCost) {
+      const select = document.getElementById('infra-type');
+      if (select) {
+        select.value = projectName;
+      }
+      const quoteInput = document.getElementById('quote-amount');
+      if (quoteInput) {
+        quoteInput.value = suggestedCost;
+      }
+      // Also sync simulator slider
+      if (inputAmount) {
+        inputAmount.value = suggestedCost;
+        calculateAmortization();
+      }
+      // Scroll smoothly to wizard
+      document.getElementById('solicitud-wizard').scrollIntoView({ behavior: 'smooth' });
+      switchStep(2);
+    }
+
+    // Submission Toast Feedback
+    function submitLoanApplication(e) {
+      e.preventDefault();
+      const btn = document.getElementById('btn-submit');
+      btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>Transmitiendo a Fiduciaria...</span>`;
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">task_alt</span><span>Solicitud MP-2024-104 Registrada</span>`;
+        btn.className = 'px-space-xl py-3 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg font-bold flex items-center gap-2 shadow-md';
+        alert('Su solicitud ha sido radicada con éxito ante el Comité Agrícola Comunitario con código MP-2024-104. Se le notificará vía SMS la programación de la visita técnica de verificación.');
+      }, 1400);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-lg px-space-lg"><div class="w-full flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-lg"><span class="material-symbols-outlined text-secondary text-[16px]">workspace_premium</span><span class="font-label-sm text-label-sm font-bold text-on-surface">Especialidad SCA • Cup of Excellence Standard</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-lg"><span class="material-symbols-outlined text-primary text-[16px]">shield</span><span class="font-label-sm text-label-sm font-bold text-on-surface">Custodia Fiduciaria Agraria</span></div></div><div class="text-center md:text-right"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Origen Noble. Microfinanzas Éticas y Café de Alta Especialidad.</p></div></div></footer></div></body></html>

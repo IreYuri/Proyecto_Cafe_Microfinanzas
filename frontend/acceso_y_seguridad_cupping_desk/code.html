@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#f1dfd8","error-container":"#ffdad6","on-surface-variant":"#54433a","on-tertiary-container":"#c1d4c1","surface-tint":"#934b19","on-background":"#231916","tertiary-container":"#4b5c4e","inverse-primary":"#ffb68c","inverse-surface":"#392e2a","tertiary":"#344537","error":"#ba1a1a","tertiary-fixed":"#d5e7d5","surface-container":"#fdeae3","primary-fixed-dim":"#ffb68c","on-tertiary-fixed":"#101f13","primary-fixed":"#ffdbc9","tertiary-fixed-dim":"#b9cbb9","on-tertiary":"#ffffff","secondary-fixed-dim":"#a1d494","outline":"#877369","primary-container":"#8b4513","secondary-container":"#b9eeab","on-primary-fixed-variant":"#753401","surface-dim":"#e8d6d0","on-error":"#ffffff","surface-bright":"#fff8f6","on-secondary":"#ffffff","secondary":"#3b6934","on-secondary-container":"#3f6d38","surface-container-highest":"#f1dfd8","primary":"#6c2f00","outline-variant":"#dac2b6","on-secondary-fixed-variant":"#23501e","secondary-fixed":"#bcf0ae","on-primary-container":"#ffc29f","background":"#fff8f6","on-secondary-fixed":"#002201","surface-container-low":"#fff1ec","surface-container-high":"#f7e4de","on-primary":"#ffffff","on-surface":"#231916","inverse-on-surface":"#ffede7","on-tertiary-fixed-variant":"#3a4b3d","surface-container-lowest":"#ffffff","on-error-container":"#93000a","on-primary-fixed":"#321200","surface":"#fff8f6"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","gutter":"1.5rem","space-md":"1rem","margin-mobile":"1.25rem","space-lg":"1.5rem","margin":"3rem","gutter-mobile":"1rem","space-xl":"2.5rem"},"fontFamily":{"headline-lg":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Playfair Display"],"display-lg":["Playfair Display"],"label-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"headline-md":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"numeric-data":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"]},"fontSize":{"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"numeric-data":["24px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><main class="w-full min-h-screen bg-background flex flex-col justify-center items-center px-space-md py-space-xl"><div class="flex flex-col w-full max-w-5xl mx-auto px-4 py-8 items-center justify-center relative">
+<!-- Toast Notificación Flotante Superior -->
+<aside class="w-full max-w-2xl mb-8 transform transition-all duration-300 ease-out flex items-start gap-4 p-4 rounded-xl bg-surface-container-high shadow-lg border-l-4 border-primary" id="security-alert-toast">
+<div class="p-2 rounded-lg bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield_lock</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm uppercase tracking-wider text-primary">Protocolo de Bóveda</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-body-sm text-on-surface-variant font-medium">Acceso Cifrado Nivel 4</span>
+</div>
+<p class="font-body-sm text-on-surface">
+<span class="font-semibold text-primary">Atención de Seguridad:</span> La cuenta será bloqueada temporalmente tras 3 intentos fallidos de autenticación. Quedan <strong class="text-on-surface">2 intentos permitidos</strong>.
+      </p>
+</div>
+<button class="text-outline hover:text-on-surface p-1 transition-colors" onclick="document.getElementById('security-alert-toast').classList.add('hidden')" title="Cerrar aviso">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</aside>
+<!-- Contenedor Principal Editorial -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Panel Izquierdo: Respaldo Gráfico y Métricas Fiduciarias -->
+<div class="lg:col-span-5 flex flex-col justify-between rounded-xl bg-surface-container p-8 shadow-sm relative overflow-hidden">
+<!-- Fondo decorativo sutil -->
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-secondary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10">
+<!-- Identidad Agraria & Grado de Especialidad -->
+<div class="flex items-center justify-between mb-8 pb-6 border-b border-outline-variant/40">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center font-headline-sm">
+<span class="material-symbols-outlined text-[24px]">coffee</span>
+</div>
+<div>
+<p class="font-label-sm uppercase tracking-widest text-primary font-bold">Origen Noble</p>
+<h2 class="font-headline-sm text-on-surface leading-tight">Fideicomiso &amp; Cupping Desk</h2>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-sm font-semibold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> SCA 88+
+          </span>
+</div>
+<!-- Imagen Editorial de Origen -->
+<div class="relative rounded-lg overflow-hidden mb-6 shadow-sm group">
+<img class="w-full h-44 object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="High-altitude artisanal specialty coffee parchment drying beds in a lush green Andean valley with volcanic soil, warm sunlight illuminating drying honey-processed beans under clear morning skies, agrarian editorial aesthetic with earthy terracotta and natural foliage tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACVOQoL-ZAC6s6cqnkkYuEKGxUOMQTtPuBIIIFRpWCD57yBEgu5ZHHhgG36eQcZnaEWhHaOPIRqjbzLa2ir-R6wp9ZVdepKfRpeB_jDHdek8CNf-lctQw4dmymRVCk5Gp0aKZtXNpaaK6BrQ8UUNZVD_q1Ea1Yxr7qfs5_2bzoChGjKTcWOCmaQQAzWKKFuJBJ0qkL3r9SYsu3AmdYcPwbz85wWckx5hyndVmbQmVRxpHBLJ9pGU_Wlg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent flex items-end p-4">
+<div>
+<p class="text-surface font-label-sm uppercase tracking-wider text-surface-container">Cosecha Mitaca 2025</p>
+<p class="text-surface font-body-sm font-medium">Lote Pitalito Anaeróbico • 1,890 msnm</p>
+</div>
+</div>
+</div>
+<!-- Métricas en Tiempo Real -->
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-wider">Actividad en Plataforma</span>
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Mercado Abierto
+            </span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mb-1">gavel</span>
+<p class="font-numeric-data text-on-surface">14</p>
+<p class="font-body-sm text-on-surface-variant leading-tight">Subastas activas de microlotes</p>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mb-1">monetization_on</span>
+<p class="font-numeric-data text-on-surface">$180K <span class="font-label-sm text-outline font-normal">USD</span></p>
+<p class="font-body-sm text-on-surface-variant leading-tight">Créditos de cosecha otorgados</p>
+</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0">wb_sunny</span>
+<p class="font-body-sm text-on-surface leading-tight">
+<strong>42 beneficiaderos solares</strong> financiados y en monitoreo de humedad por IoT.
+            </p>
+</div>
+</div>
+</div>
+<!-- Pie Técnico del Panel -->
+<div class="pt-6 mt-6 border-t border-outline-variant/40 flex items-center justify-between text-on-surface-variant font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">encrypted</span>
+<span>Bóveda Fiduciaria 256-bit</span>
+</div>
+<span class="font-mono text-outline">v4.12-PROD</span>
+</div>
+</div>
+<!-- Panel Derecho: Formulario de Autenticación Rigurosa -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-lowest p-8 lg:p-10 shadow-md flex flex-col justify-between">
+<div>
+<!-- Encabezado Editorial -->
+<header class="mb-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface-variant font-label-sm font-semibold tracking-wider uppercase">Portal Institucional</span>
+<span class="text-outline text-label-sm">•</span>
+<span class="font-label-sm text-on-surface-variant">Red Cafetera Especial</span>
+</div>
+<h1 class="font-headline-lg text-on-surface">Portal Cupping Desk &amp; Fideicomiso</h1>
+<p class="font-body-md text-on-surface-variant mt-2">
+            Autenticación para Productores, Catadores Q-Grader e Importadores Internacionales.
+          </p>
+</header>
+<!-- Selector de Perfil Segmentado -->
+<div class="mb-6">
+<label class="block font-label-sm uppercase tracking-wider text-on-surface-variant mb-2">Selecciona Perfil de Operación</label>
+<div class="grid grid-cols-3 gap-2 p-1.5 bg-surface-container-low rounded-lg" id="role-selector-group">
+<button class="role-btn active-role py-2.5 px-3 rounded text-center transition-all duration-200 font-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold" onclick="selectRole(this, 'buyer')" type="button">
+<span class="material-symbols-outlined text-[18px] block mx-auto mb-0.5">flight_takeoff</span>
+              Comprador
+            </button>
+<button class="role-btn py-2.5 px-3 rounded text-center transition-all duration-200 font-label-md text-on-surface-variant hover:text-on-surface" onclick="selectRole(this, 'producer')" type="button">
+<span class="material-symbols-outlined text-[18px] block mx-auto mb-0.5">psychiatry</span>
+              Caficultor
+            </button>
+<button class="role-btn py-2.5 px-3 rounded text-center transition-all duration-200 font-label-md text-on-surface-variant hover:text-on-surface" onclick="selectRole(this, 'grader')" type="button">
+<span class="material-symbols-outlined text-[18px] block mx-auto mb-0.5">assignment_turned_in</span>
+              Admin / Q-Grader
+            </button>
+</div>
+</div>
+<!-- Formulario -->
+<form class="space-y-4" onsubmit="event.preventDefault(); triggerAuth();">
+<!-- Campo Identificador -->
+<div>
+<label class="flex justify-between items-center font-label-md text-on-surface mb-1.5" for="user-identity">
+<span id="identity-label">Correo Corporativo o Código de Importador</span>
+<span class="font-label-sm text-outline">Obligatorio</span>
+</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]" id="identity-icon">badge</span>
+</div>
+<input class="w-full pl-11 pr-4 py-3 rounded bg-surface-container-low text-on-surface placeholder:text-outline/70 focus:outline-none focus:bg-surface focus:ring-2 focus:ring-primary transition-all font-body-md shadow-inner" id="user-identity" placeholder="ej. direct-trade@nordiccoffee.com" required="" type="text"/>
+</div>
+</div>
+<!-- Campo Contraseña con Toggle Visibilidad -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<label class="font-label-md text-on-surface" for="user-password">Contraseña de Bóveda</label>
+<button class="font-label-sm text-primary hover:underline" onclick="fillDemo()" type="button">Autocompletar Llave Demo</button>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">key</span>
+</div>
+<input class="w-full pl-11 pr-11 py-3 rounded bg-surface-container-low text-on-surface placeholder:text-outline/70 focus:outline-none focus:bg-surface focus:ring-2 focus:ring-primary transition-all font-body-md shadow-inner" id="user-password" placeholder="••••••••••••••••" required="" type="password"/>
+<button class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-outline hover:text-on-surface focus:outline-none" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="pwd-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Opciones adicionales -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary bg-surface-container-low accent-primary" type="checkbox"/>
+<span class="font-body-sm text-on-surface">Recordar sesión en esta terminal de catación</span>
+</label>
+</div>
+<!-- CTA Principal -->
+<button class="w-full mt-2 py-3.5 px-6 rounded bg-primary text-on-primary hover:bg-secondary transition-colors duration-200 font-label-lg flex items-center justify-center gap-2 shadow-sm" id="submit-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">login</span>
+<span id="btn-text">Ingresar a la Plataforma</span>
+</button>
+</form>
+<!-- Soporte Cooperativo -->
+<div class="mt-4 text-center">
+<a class="font-body-sm text-primary hover:text-on-surface underline transition-colors" href="#">
+            ¿Olvidaste tu contraseña o requieres soporte de cooperativa?
+          </a>
+</div>
+<!-- Divisor con Sello Editorial -->
+<div class="relative my-6">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/60"></div>
+</div>
+<div class="relative flex justify-center">
+<span class="bg-surface-container-lowest px-3 font-label-sm text-outline uppercase tracking-wider">Identidad Federada</span>
+</div>
+</div>
+<!-- Métodos SSO Alternativos -->
+<div class="grid grid-cols-2 gap-3">
+<button class="py-2.5 px-4 rounded bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-center gap-2 text-on-surface font-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">token</span>
+<span>SCA TraceID Web3</span>
+</button>
+<button class="py-2.5 px-4 rounded bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-center gap-2 text-on-surface font-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">domain</span>
+<span>Google Workspace</span>
+</button>
+</div>
+</div>
+<!-- Barra de Certificación y Cumplimiento -->
+<footer class="pt-6 mt-6 border-t border-outline-variant/40 flex flex-wrap items-center justify-between gap-3 font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">gpp_good</span>
+<span>Certificación Fiduciaria Auditada</span>
+</div>
+<div class="flex items-center gap-4 text-label-sm text-outline">
+<span>ISO 27001</span>
+<span>•</span>
+<span>Rainforest Alliance Protocol</span>
+<span>•</span>
+<span>SCA Standard v2024</span>
+</div>
+</footer>
+</div>
+</div>
+<!-- Microinteracción Script -->
+<script>
+    function togglePasswordVisibility() {
+      const pwdInput = document.getElementById('user-password');
+      const pwdIcon = document.getElementById('pwd-icon');
+      if (pwdInput.type === 'password') {
+        pwdInput.type = 'text';
+        pwdIcon.innerText = 'visibility_off';
+      } else {
+        pwdInput.type = 'password';
+        pwdIcon.innerText = 'visibility';
+      }
+    }
+
+    function selectRole(button, role) {
+      const buttons = document.querySelectorAll('.role-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+        btn.classList.add('text-on-surface-variant');
+      });
+      button.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+      button.classList.remove('text-on-surface-variant');
+
+      const identityLabel = document.getElementById('identity-label');
+      const identityInput = document.getElementById('user-identity');
+      const identityIcon = document.getElementById('identity-icon');
+
+      if (role === 'buyer') {
+        identityLabel.innerText = 'Correo Corporativo o Código de Importador';
+        identityInput.placeholder = 'ej. direct-trade@nordiccoffee.com';
+        identityIcon.innerText = 'badge';
+      } else if (role === 'producer') {
+        identityLabel.innerText = 'Cédula Cafetera o RUC de Cooperativa';
+        identityInput.placeholder = 'ej. CC-8902194-HUI';
+        identityIcon.innerText = 'agriculture';
+      } else if (role === 'grader') {
+        identityLabel.innerText = 'Licencia Q-Grader (CQI ID) / Token Admin';
+        identityInput.placeholder = 'ej. CQI-AR-4491-PRO';
+        identityIcon.innerText = 'verified_user';
+      }
+    }
+
+    function fillDemo() {
+      document.getElementById('user-identity').value = 'carlos.valencia@fincasantaines.org';
+      document.getElementById('user-password').value = 'CosechaNoble2025$';
+    }
+
+    function triggerAuth() {
+      const btnText = document.getElementById('btn-text');
+      const btn = document.getElementById('submit-btn');
+      btnText.innerText = 'Verificando con Bóveda...';
+      btn.classList.add('opacity-75', 'cursor-wait');
+
+      setTimeout(() => {
+        btnText.innerText = 'Sesión Iniciada con Éxito';
+        btn.classList.remove('bg-primary', 'hover:bg-secondary');
+        btn.classList.add('bg-secondary', 'text-on-secondary');
+      }, 900);
+    }
+  </script>
+</div></main></body></html>
